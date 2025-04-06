@@ -121,7 +121,7 @@ body{
         const seconds = date.getSeconds() * 6;
         const minutes = date.getMinutes() * 6 + date.getSeconds() * 0.1;
         const hour = date.getHours() * 30 + date.getMinutes() * 0.5;
-// console.log(seconds, date.getSeconds());
+console.log('Seconds with formula:',seconds,'\n Seconds without the formula:', date.getSeconds());
 secondHand.style.transform =`rotate(${seconds}deg)`;
 minutesHand.style.transform =`rotate(${minutes}deg)`;
 hourHand.style.transform =`rotate(${hour}deg)`;
